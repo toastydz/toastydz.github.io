@@ -1,0 +1,71 @@
+site_name: ToastyDZ | HTB Writeups
+site_url: https://toastydz.github.io/
+repo_url: https://github.com/toastydz/toastydz.github.io
+repo_name: toastydz/toastydz.github.io
+site_description: Hack The Box walkthroughs, from enumeration to privilege escalation.
+site_author: ToastyDZ
+docs_dir: Machines
+use_directory_urls: false
+theme:
+  name: material
+  font: false
+  icon:
+    logo: material/console
+  palette:
+    - scheme: slate
+      primary: black
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+    - scheme: default
+      primary: black
+      accent: green
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+extra_css:
+  - stylesheets/extra.css
+exclude_docs: |
+  SUMMARY.md
+nav:
+  - Home: README.md
+  - Linux:
+      - Overview: linux-machines/README.md
+      - Busqueda: linux-machines/Busqueda.md
+      - Jupiter: linux-machines/Jupiter.md
+      - MonitorsTwo: linux-machines/MonitorsTwo.md
+      - OnlyForYou: linux-machines/onlyforyou.md
+      - PC: linux-machines/PC.md
+      - Pilgrimage: linux-machines/pilgrimage.md
+      - Sau: linux-machines/sau.md
+      - Topology: linux-machines/topology.md
+      - TwoMillion: linux-machines/TwoMillion.md
+      - Wifinetic: linux-machines/Wifinetic.md
+  - Windows:
+      - Overview: windows-machines/README.md
+      - Forest: windows-machines/forest.md
+      - Return: windows-machines/return.md
+      - Sauna: windows-machines/sauna.md
+      - Support: windows-machines/support.md
+      - Timelapse: windows-machines/timelapse.md
